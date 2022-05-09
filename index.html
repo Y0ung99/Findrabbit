@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Scroll</title>
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+      }
+      .scrolltorabbit {
+        background-color: salmon;
+        padding: 8px;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        font-size: 32px;
+        margin: 16px 0;
+      }
+      .world {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="scrolltorabbit">
+      Find a Rabbit
+    </button>
+    <div class="world">
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="rabbit"
+        src="img/rabbit.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+      <img
+        class="carrot"
+        src="img/carrot.png"
+        alt=""
+      />
+    </div>
+
+    <script>
+      const button = document.querySelector(
+        '.scrolltorabbit'
+      );
+      const rabbit =
+        document.querySelector('.rabbit');
+      button.addEventListener(
+        'click',
+        (event) => {
+          rabbit.scrollIntoView({
+            block: 'center',
+            behavior: 'smooth',
+          });
+        }
+      );
+    </script>
+  </body>
+</html>
